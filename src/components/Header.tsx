@@ -1,4 +1,3 @@
-
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
@@ -10,6 +9,7 @@ const Header = () => {
 
   const navigation = [
     { name: "Главная", href: "/" },
+    { name: "О нас", href: "/about" },
     { name: "Тарифы", href: "/pricing" },
     { name: "Контакты", href: "/contacts" },
   ];
