@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle, Users, BarChart3, Shield, Zap, Trophy, Star, ArrowRight, Play, TrendingUp, Clock, Globe, Brain, Sparkles, Target, Award, MessageSquare, Lightbulb } from "lucide-react";
@@ -7,19 +6,19 @@ import { Link } from "react-router-dom";
 const Home = () => {
   const features = [
     {
-      icon: Brain,
-      title: "ИИ-powered создание тестов",
-      description: "Искусственный интеллект автоматически генерирует вопросы и анализирует результаты для максимальной эффективности"
+      icon: Zap,
+      title: "Быстрое создание тестов",
+      description: "Интуитивный конструктор тестов с поддержкой различных типов вопросов и автоматической проверкой"
     },
     {
       icon: Users,
-      title: "Групповое тестирование",
+      title: "Групповое тестирование", 
       description: "Организация тестирования для больших групп участников с автоматическим распределением"
     },
     {
       icon: BarChart3,
-      title: "Умная аналитика",
-      description: "ИИ анализирует результаты и предоставляет детальные отчеты с персональными рекомендациями"
+      title: "Детальная аналитика",
+      description: "Подробные отчеты и статистика с возможностью экспорта данных и персональными рекомендациями"
     },
     {
       icon: Shield,
@@ -27,22 +26,22 @@ const Home = () => {
       description: "Надежная защита персональных данных с шифрованием корпоративного уровня"
     },
     {
-      icon: Zap,
-      title: "Мгновенные результаты",
-      description: "Автоматическая проверка и моментальное получение результатов тестирования"
-    },
-    {
       icon: Trophy,
       title: "Сертификация",
       description: "Выдача персонализированных сертификатов и дипломов с цифровой подписью"
+    },
+    {
+      icon: Brain,
+      title: "ИИ-помощник (опция)",
+      description: "Дополнительные возможности с искусственным интеллектом для генерации вопросов и анализа"
     }
   ];
 
   const benefits = [
     "Экономия времени на проверке до 90%",
-    "ИИ-анализ для объективной оценки знаний",
-    "Удобный доступ с любых устройств 24/7",
-    "Автоматизация всего процесса обучения",
+    "Объективная оценка знаний участников",
+    "Удобный доступ с любых устройств 24/7", 
+    "Автоматизация всего процесса тестирования",
     "Интеграция с популярными LMS системами",
     "Поддержка множественных форматов вопросов"
   ];
@@ -99,30 +98,30 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
               <div className="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 mb-6 border border-white/30">
-                <Brain className="h-5 w-5 text-yellow-300 mr-3" />
+                <Zap className="h-5 w-5 text-yellow-300 mr-3" />
                 <Star className="h-4 w-4 text-yellow-300 mr-2" />
-                <span className="text-white text-sm font-medium">Powered by AI • Рейтинг 4.9/5</span>
+                <span className="text-white text-sm font-medium">Профессиональная платформа • Рейтинг 4.9/5</span>
                 <Sparkles className="h-4 w-4 text-yellow-300 ml-2" />
               </div>
 
               <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">
-                Будущее тестирования с 
+                Профессиональная платформа 
                 <span className="block text-transparent bg-gradient-to-r from-yellow-200 via-blue-200 to-white bg-clip-text">
-                  искусственным интеллектом
+                  для тестирования
                 </span>
               </h1>
               <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-                Создавайте умные тесты, получайте ИИ-анализ результатов и революционизируйте 
-                процесс обучения с помощью передовых технологий машинного обучения
+                Создавайте тесты любой сложности, проводите групповые тестирования и получайте детальную аналитику. 
+                Дополнительно доступны возможности ИИ для автоматизации процессов
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
                 <Button size="lg" className="bg-white text-blue-600 hover:bg-yellow-50 text-lg px-8 py-4 shadow-2xl hover:shadow-3xl transition-all transform hover:-translate-y-1 hover:scale-105">
                   <Play className="h-5 w-5 mr-2" />
-                  Попробовать ИИ бесплатно
+                  Попробовать бесплатно
                 </Button>
                 <Link to="/about">
                   <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600 text-lg px-8 py-4 backdrop-blur-sm">
-                    Узнать об ИИ
+                    Узнать больше
                     <ArrowRight className="h-5 w-5 ml-2" />
                   </Button>
                 </Link>
@@ -131,11 +130,11 @@ const Home = () => {
               <div className="flex items-center justify-center lg:justify-start space-x-6 text-blue-100">
                 <div className="flex items-center">
                   <Clock className="h-5 w-5 mr-2" />
-                  <span>ИИ настройка за 2 минуты</span>
+                  <span>Настройка за 2 минуты</span>
                 </div>
                 <div className="flex items-center">
                   <Globe className="h-5 w-5 mr-2" />
-                  <span>Умный анализ 24/7</span>
+                  <span>Доступ 24/7</span>
                 </div>
               </div>
             </div>
@@ -148,11 +147,11 @@ const Home = () => {
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-3">
                         <div className="w-10 h-10 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center">
-                          <Brain className="h-5 w-5 text-white" />
+                          <Zap className="h-5 w-5 text-white" />
                         </div>
                         <div>
-                          <div className="text-white font-semibold">ИИ Тест-Конструктор</div>
-                          <div className="text-blue-200 text-sm">Генерация вопросов</div>
+                          <div className="text-white font-semibold">Тест-Конструктор</div>
+                          <div className="text-blue-200 text-sm">Создание тестов</div>
                         </div>
                       </div>
                       <div className="flex space-x-2">
@@ -164,28 +163,28 @@ const Home = () => {
                     
                     <div className="bg-white/25 rounded-xl p-4 backdrop-blur-sm">
                       <div className="text-white font-medium mb-3">Вопрос 1 из 10</div>
-                      <div className="text-blue-100 mb-4">Какой принцип лежит в основе машинного обучения?</div>
+                      <div className="text-blue-100 mb-4">Какой принцип лежит в основе эффективного тестирования?</div>
                       <div className="space-y-2">
                         <div className="bg-white/20 rounded-lg p-3 text-blue-100 hover:bg-white/30 transition-colors cursor-pointer">
-                          А) Обучение на данных
+                          А) Четкая формулировка вопросов
                         </div>
                         <div className="bg-green-400/30 rounded-lg p-3 text-white border border-green-400/50">
-                          Б) Автоматическая оптимизация ✓
+                          Б) Объективная оценка знаний ✓
                         </div>
                         <div className="bg-white/20 rounded-lg p-3 text-blue-100">
-                          В) Программирование правил
+                          В) Большое количество вопросов
                         </div>
                       </div>
                     </div>
                     
                     <div className="grid grid-cols-2 gap-4">
                       <div className="bg-white/25 rounded-xl p-4 text-center backdrop-blur-sm">
-                        <div className="text-2xl font-bold text-white">87%</div>
-                        <div className="text-blue-200 text-sm">ИИ точность</div>
+                        <div className="text-2xl font-bold text-white">95%</div>
+                        <div className="text-blue-200 text-sm">Точность</div>
                       </div>
                       <div className="bg-white/25 rounded-xl p-4 text-center backdrop-blur-sm">
-                        <div className="text-2xl font-bold text-white">2.3с</div>
-                        <div className="text-blue-200 text-sm">Анализ ответа</div>
+                        <div className="text-2xl font-bold text-white">0.8с</div>
+                        <div className="text-blue-200 text-sm">Проверка</div>
                       </div>
                     </div>
                   </div>
@@ -231,20 +230,20 @@ const Home = () => {
         </div>
       </section>
 
-      {/* AI Demo Section */}
+      {/* Features Demo Section */}
       <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-flex items-center bg-blue-100 rounded-full px-6 py-3 mb-4">
-              <Brain className="h-5 w-5 text-blue-600 mr-2" />
-              <span className="text-blue-600 font-medium">Искусственный интеллект в действии</span>
+              <Zap className="h-5 w-5 text-blue-600 mr-2" />
+              <span className="text-blue-600 font-medium">Возможности платформы</span>
             </div>
             <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Умные тесты будущего
+              Профессиональные инструменты
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12">
-              Наш ИИ автоматически анализирует ответы, выявляет паттерны обучения и предоставляет 
-              персонализированные рекомендации для каждого участника
+              Полный набор инструментов для создания, проведения и анализа тестов. 
+              Дополнительно доступны ИИ-возможности для автоматизации процессов
             </p>
           </div>
           
@@ -257,7 +256,7 @@ const Home = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900">Адаптивное тестирование</h3>
-                    <p className="text-sm text-gray-600">ИИ подбирает сложность вопросов</p>
+                    <p className="text-sm text-gray-600">Подбор сложности вопросов</p>
                   </div>
                 </div>
                 <div className="bg-gradient-to-r from-green-100 to-blue-100 rounded-lg p-4">
@@ -280,8 +279,8 @@ const Home = () => {
                 </div>
                 <div className="bg-gradient-to-r from-purple-100 to-pink-100 rounded-lg p-4">
                   <div className="text-sm text-gray-700">
-                    "Слабые места: логические задачи. Рекомендуем пройти курс 
-                    'Развитие логического мышления'"
+                    "Выявлены пробелы в знаниях по логическим задачам. Рекомендуем 
+                    дополнительное изучение материала"
                   </div>
                 </div>
               </div>
@@ -289,8 +288,8 @@ const Home = () => {
 
             <div className="bg-white rounded-3xl p-8 shadow-2xl">
               <div className="text-center mb-6">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">ИИ-Анализ результатов</h3>
-                <p className="text-gray-600">Мгновенная обработка данных</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Анализ результатов</h3>
+                <p className="text-gray-600">Детальная статистика</p>
               </div>
               
               <div className="space-y-4">
@@ -312,7 +311,7 @@ const Home = () => {
                 <div className="flex items-center justify-between p-4 bg-blue-50 rounded-xl">
                   <div className="flex items-center">
                     <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3">
-                      <Brain className="h-5 w-5 text-white" />
+                      <BarChart3 className="h-5 w-5 text-white" />
                     </div>
                     <span className="font-medium text-gray-900">Логика</span>
                   </div>
@@ -329,7 +328,7 @@ const Home = () => {
                     <div className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center mr-3">
                       <Sparkles className="h-5 w-5 text-white" />
                     </div>
-                    <span className="font-medium text-gray-900">Креативность</span>
+                    <span className="font-medium text-gray-900">Общий балл</span>
                   </div>
                   <div className="text-right">
                     <div className="text-2xl font-bold text-yellow-600">85%</div>
@@ -426,11 +425,11 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-white">
               <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-                Почему выбирают наш ИИ?
+                Почему выбирают ТестПро?
               </h2>
               <p className="text-lg text-blue-100 mb-8">
-                Наша платформа объединяет простоту использования с мощными возможностями ИИ, 
-                предоставляя все необходимые инструменты для революционного подхода к тестированию.
+                Наша платформа объединяет простоту использования с мощными возможностями, 
+                предоставляя все необходимые инструменты для профессионального тестирования.
               </p>
               <ul className="space-y-4">
                 {benefits.map((benefit, index) => (
@@ -451,15 +450,15 @@ const Home = () => {
                 </div>
                 <div className="bg-white rounded-xl p-6 text-center shadow-lg transform hover:scale-105 transition-transform">
                   <div className="text-3xl font-bold text-blue-600 mb-2">24/7</div>
-                  <div className="text-gray-600">ИИ поддержка</div>
+                  <div className="text-gray-600">Поддержка</div>
                 </div>
                 <div className="bg-white rounded-xl p-6 text-center shadow-lg transform hover:scale-105 transition-transform">
                   <div className="text-3xl font-bold text-blue-600 mb-2">500+</div>
                   <div className="text-gray-600">Компаний</div>
                 </div>
                 <div className="bg-white rounded-xl p-6 text-center shadow-lg transform hover:scale-105 transition-transform">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">AI</div>
-                  <div className="text-gray-600">Аналитика</div>
+                  <div className="text-3xl font-bold text-blue-600 mb-2">ИИ</div>
+                  <div className="text-gray-600">Опционально</div>
                 </div>
               </div>
             </div>
@@ -476,22 +475,22 @@ const Home = () => {
         
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 relative">
           <div className="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 mb-6 border border-white/30">
-            <Brain className="h-5 w-5 text-yellow-300 mr-3" />
-            <span className="text-white font-medium">Присоединяйтесь к ИИ-революции</span>
+            <Trophy className="h-5 w-5 text-yellow-300 mr-3" />
+            <span className="text-white font-medium">Присоединяйтесь к лидерам</span>
           </div>
           
           <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
-            Готовы к умному тестированию?
+            Готовы к профессиональному тестированию?
           </h2>
           <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-            Присоединяйтесь к тысячам организаций, которые уже используют ИИ-powered ТестПро 
+            Присоединяйтесь к тысячам организаций, которые уже используют ТестПро 
             для трансформации процессов обучения и оценки знаний
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Button size="lg" className="bg-white text-blue-600 hover:bg-yellow-50 text-lg px-8 py-4 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all hover:scale-105">
-              <Brain className="h-5 w-5 mr-2" />
-              Попробовать ИИ бесплатно
+              <Zap className="h-5 w-5 mr-2" />
+              Попробовать бесплатно
             </Button>
             <Link to="/contacts">
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600 text-lg px-8 py-4 backdrop-blur-sm">
@@ -502,7 +501,7 @@ const Home = () => {
           </div>
           
           <p className="text-blue-200 text-sm">
-            Бесплатная ИИ-демонстрация • Без привязки карты • Настройка за 2 минуты
+            Бесплатная демонстрация • Без привязки карты • Настройка за 2 минуты
           </p>
         </div>
       </section>
